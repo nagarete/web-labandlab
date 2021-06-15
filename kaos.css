@@ -11,9 +11,9 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 body {
@@ -44,25 +44,27 @@ body {
 }
 
 /* .header-content {
-  justify-content: space-between;
+  margin-top: -25rem;
 } */
 
 .container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
-  padding: 5rem;
+  padding:5rem;
+  margin-top: -7rem;
+  /* margin-bottom: auto; */
 }
 
 /* ubah */
 
-.header-motto {
+/* .header-motto {
   font-family: "Oswald", sans-serif;
   font-size: 5rem;
   text-align: center;
   margin-top: -5rem;
-}
+} */
 
 .header-phrase {
   font-size: 1.25rem;
@@ -95,6 +97,7 @@ body {
   min-height: 100vh;
   /* display: flex;
   flex-direction: column; */
+  /* margin-top: -18rem; */
 }
 
 .page-1 {
@@ -154,6 +157,30 @@ body {
   padding: 2rem 2rem;
   /* border: 10px solid grey; */
   /* border-radius: 2rem; */
+}
+
+.catalog-container{
+  /* height: 100vh; */
+  /* border: 10px solid red; */
+}
+
+.catalog-content{
+  height: 50vh;
+}
+
+.top-catalog{
+  display: flex;
+  justify-content: center;
+}
+
+.middle-catalog{
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-catalog{
+  display: flex;
+  justify-content: center;
 }
 
 footer{
