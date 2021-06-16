@@ -99,7 +99,17 @@ ul {
 
 .header-phrase {
   font-size: 1.25rem;
-  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
 
 .header-icon-container {
@@ -172,53 +182,6 @@ ul {
   width: 3rem;
   margin-top: 0.5rem;
   margin-right: 1rem;
-}
-
-.promo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 3rem;
-  padding: 2rem 2rem;
-}
-
-.catalog-container {
-  max-width: 100vw;
-}
-
-.catalog-content {
-  width: 25rem;
-}
-
-.catalog-content-container {
-  display: flex;
-  justify-content: center;
-  max-width: 100vw;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-}
-
-h3 {
-  text-align: center;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.logo-icon {
-  height: 3rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 @media (max-width: 667px) {
