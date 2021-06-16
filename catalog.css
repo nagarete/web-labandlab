@@ -1,0 +1,35 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: center;
+}
+
+.catalog-item {
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.catalog-item:hover {
+  background-color: #f2f2f2;
+}
+
+.catalog-pic {
+  width: 100%;
+  margin-bottom: -2rem;
+}
+
+.catalog-desc {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+}
+
+.catalog-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  width: 2rem;
+  margin-top: 0.25rem;
+}
