@@ -206,3 +206,28 @@ h3{
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 667px) {
+  .img-mockup{
+    height: 50vh;
+  }
+  .top-catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle-catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .catalog-content{
+    width: 50vh;
+
+  }
+}
