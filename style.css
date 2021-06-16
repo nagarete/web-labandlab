@@ -129,7 +129,6 @@ ul {
 }
 
 .page-1 {
-  max-height: 100vh;
   background-color: #ecebe9;
   display: flex;
 }
@@ -144,7 +143,6 @@ ul {
 }
 
 .img-mockup {
-  width: 90%;
   max-width: 50rem;
 }
 
