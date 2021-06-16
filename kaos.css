@@ -164,8 +164,9 @@ nav {
 }
 
 .catalog-container{
-  /* height: 100vh; */
-  /* border: 10px solid red; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
 }
 
 .catalog-content{
@@ -215,23 +216,14 @@ h3{
   .img-mockup{
     height: 50vh;
   }
-  .top-catalog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .middle-catalog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .bottom-catalog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
   }
   .catalog-content{
-    width: 50vh;
+    height: 17.5rem;
 
   }
 }
