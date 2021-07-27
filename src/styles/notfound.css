@@ -1,0 +1,25 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.big-logo {
+  min-width: 7rem;
+  width: 15%;
+  margin: 1rem;
+}
+
+.error-text {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.return-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
