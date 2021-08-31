@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo-container {
+  margin-right: auto;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.navlinks-container {
+  margin-left: 1rem;
+}
+
+.navlinks {
+  color: #000;
+}
+
+@media (max-width: 620px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+
+  .logo-container {
+    margin-right: 0;
+  }
+
+  .navlinks-container {
+    display: none;
+  }
+}

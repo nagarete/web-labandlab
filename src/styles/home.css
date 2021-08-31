@@ -1,0 +1,61 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.motto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+.motto-text {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.motto-cr {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.motto-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 780px) {
+  .motto-text {
+    font-size: 4rem;
+  }
+
+  .motto-cr {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .motto-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .motto-container {
+    margin: 3rem;
+  }
+
+  .motto-text {
+    font-size: 2.5rem;
+  }
+}
