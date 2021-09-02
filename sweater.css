@@ -212,7 +212,7 @@ h3{
   margin-bottom: 2rem;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 1024px) {
   .img-mockup{
     height: 50vh;
   }
@@ -225,5 +225,45 @@ h3{
   .catalog-content{
     height: 17.5rem;
 
+  }
+}
+@media (max-width: 768px) {
+  .img-mockup{
+    height: 45vh;
+  }
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .catalog-content{
+    height: 17.5rem;
+
+  }
+}
+
+@media (max-width: 375px) {
+  .content{
+    max-width: 100vh;
+  }
+  .img-container{
+    margin-left: 1rem;
+  }
+  .img-mockup{
+    height: 20vh;
+  }
+
+  .title{
+    font-size: 2rem;
+  }
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .catalog-content{
+    height: 20vh;
   }
 }
