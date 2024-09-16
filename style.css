@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
 }
 
@@ -11,9 +11,9 @@ a {
 header {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 body {
@@ -24,19 +24,35 @@ nav {
   z-index: 999;
 }
 
+ul {
+  list-style: none;
+}
+
 .menu {
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .menu-list {
   display: flex;
-  list-style: none;
+  align-items: center;
+  justify-content: space-between;
   padding: 2rem;
 }
 
+.menu-item-container {
+  display: flex;
+  align-items: center;
+  min-width: 30vw;
+  max-width: 30vw;
+}
+
+.menu-item-middle {
+  margin: 0 1rem;
+}
+
 .header-logo-container {
-  margin-right: auto;
+  min-width: 30vw;
+  max-width: 30vw;
 }
 
 .header-logo {
@@ -47,32 +63,53 @@ nav {
   margin-right: 1rem;
 }
 
-/* .header-content {
-  margin-top: -25rem;
-} */
+.menu-middle-container {
+  justify-content: center;
+}
+
+.menu-right-container {
+  justify-content: flex-end;
+}
+
+.menu-icon {
+  width: 2rem;
+}
 
 .container {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
   align-items: center;
-  padding:5rem;
+  padding: 5rem;
+}
+
+.container-no-flex {
+  padding: 5rem;
   margin-top: -7rem;
-  /* margin-bottom: auto; */
 }
 
 /* ubah */
 
-/* .header-motto {
+.header-motto {
   font-family: "Oswald", sans-serif;
   font-size: 5rem;
   text-align: center;
   margin-top: -5rem;
-} */
+}
 
 .header-phrase {
   font-size: 1.25rem;
-  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
 
 .header-icon-container {
@@ -99,14 +136,10 @@ nav {
 
 .content {
   min-height: 100vh;
-  /* display: flex;
-  flex-direction: column; */
-  /* margin-top: -18rem; */
 }
 
 .page-1 {
-  max-height: 100vh;
-  background-image: linear-gradient(#ecebe9, #e5e4e2);
+  background-color: #ecebe9;
   display: flex;
 }
 
@@ -116,18 +149,19 @@ nav {
   justify-content: center;
   align-items: center;
   width: 50%;
+  padding: 2rem;
 }
 
 .img-mockup {
-  height: 80vh;
+  max-width: 85vh;
 }
-
 
 .desc-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
+  width: 50%;
 }
 
 .title {
@@ -163,67 +197,30 @@ nav {
   /* border-radius: 2rem; */
 }
 
-.catalog-container{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-}
-
-.catalog-content{
-  height: 50vh;
-}
-
-.top-catalog{
-  display: flex;
-  justify-content: center;
-}
-
-.middle-catalog{
-  display: flex;
-  justify-content: center;
-}
-
-.bottom-catalog{
-  display: flex;
-  justify-content: center;
-}
-
-footer{
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-}
-
-h3{
-  text-align: center;
-}
-
-.social-media{
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.logo-icon{
-  height: 3rem;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 667px) {
+@media (max-width: 1080px){
   .img-mockup{
-    height: 50vh;
+    height: 25rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .catalog-container{
-    display: grid;
-    grid-template-columns: auto auto;
+  .img-mockup {
+    height: 20rem;
+  }
+
+  .desc-container{
+    /* text-align: center; */
+  }
+
+  .content-links{
+    display: flex;
     justify-content: center;
-  }
-  .catalog-content{
-    height: 17.5rem;
-
   }
 }

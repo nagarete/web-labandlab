@@ -1,0 +1,133 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: center;
+}
+
+.catalog-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+}
+
+.catalog-item {
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.catalog-item:hover {
+  background-color: #f2f2f2;
+}
+
+.catalog-pic {
+  width: 100%;
+  margin-bottom: -2rem;
+}
+
+.catalog-desc {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+}
+
+.catalog-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  width: 2rem;
+  margin-top: 0.25rem;
+}
+
+.catalog-content{
+  height: 50vh;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+@media (max-width: 800px) {
+  .catalog{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: center; */
+    grid-gap: 10px;
+  }
+
+  .catalog-item{
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .catalog-pic{
+    width: 25vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-mockup{
+    height: 50vh;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-links{
+    display: flex;
+    justify-content: center;
+  }
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .catalog-content{
+    height: 25vh;
+
+  }
+}
+@media (max-width: 768px) {
+  .img-mockup{
+    height: 45vh;
+  }
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  /* .catalog-content{
+    height: 17.5rem;
+
+  } */
+}
+
+@media (max-width: 375px) {
+  /* .content{
+    max-width: 100vh;
+  } */
+  /* .img-container{
+    margin-left: 1rem;
+  } */
+  .img-mockup{
+    height: 30vh;
+  }
+  .title{
+    font-size: 2rem;
+  }
+
+  .catalog-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .catalog-content{
+    height: 20vh;
+  }
+}
